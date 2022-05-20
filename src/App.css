@@ -1,7 +1,7 @@
 .App {
-  display: flex;
-  justify-content: center;
+  background-image: url('./images/background.png');
   color: white;
-  background-image: url(./images/background.png);
+  display: flex;
   height: 100px;
+  justify-content: center;  
 }
