@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header.jsx'
-import SolarSystem from './components/SolarSystem'
+import Header from './components/Header';
+import SolarSystem from './components/SolarSystem';
 
-const textJSX = 'Hello, JSX';
 class App extends React.Component {
   render() {
     return (
