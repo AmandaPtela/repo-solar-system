@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 .App {
   align-items: center;
   background-image: url('./images/background.png');
@@ -5,20 +9,36 @@
   color: white;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: fit-content;
   justify-content: space-around;
 }
 
 header {
   font-size: 40px;
-  height: fit-content;
+  height: 250px;
   width: fit-content;
+  padding-top: 20px;
 }
 
-.planetas {
+.Title {
+  background-color: red;
+}
+
+#nome-planeta {
+  line-height: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-planetas {
   border: 0.1em solid white;
   border-radius: 1em;
+  display: flex;
+  flex-flow: row wrap;
   font-size: 18px;
+  height: 450px;
+  justify-content: center;
+  padding-top: 10px;
   text-align: center;
-  width: 80%;
+  width: 65%;
 }
