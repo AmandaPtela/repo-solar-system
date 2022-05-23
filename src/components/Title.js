@@ -4,8 +4,8 @@ import '../App.css';
 class Title extends React.Component {
   render() {
     return (
-      <div>
-        <h2>{ this.props.headline }</h2>
+      <div data-testid="solar-system">
+        <h2 data-testid="solar-system">{ this.props.headline }</h2>
       </div>
     );
   }
