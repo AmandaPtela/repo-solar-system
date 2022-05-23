@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import SolarSystem from './components/SolarSystem';
-import Title from './components/Title';
 import Missions from './components/Missions';
 
 class App extends React.Component {
@@ -12,7 +11,6 @@ class App extends React.Component {
         <Header />
         <SolarSystem />
         <Missions />
-        <Title name="oopa" />
       </div>
     );
   }

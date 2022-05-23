@@ -1,7 +1,24 @@
 .App {
+  align-items: center;
   background-image: url('./images/background.png');
+  background-size: 100%;
   color: white;
   display: flex;
-  height: 100px;
-  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+header {
+  font-size: 40px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.planetas {
+  border: 0.1em solid white;
+  border-radius: 1em;
+  font-size: 18px;
+  text-align: center;
+  width: 80%;
 }

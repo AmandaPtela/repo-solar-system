@@ -1,10 +1,18 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+import '../App.css';
 
-function title(props) {
-  return (
-    <div>
-      <h2>{props.name}</h2>
-    </div>
-  );
+class Title extends React.Component {
+  render() {
+    const { headline } = this.props;
+    return (
+      <div>
+        <h2>{ headline }</h2>
+      </div>
+    );
+  }
 }
-export default title;
+Title.protoTypes = {
+  headline: PropTypes.string.isRequired,
+};
+export default Title;
