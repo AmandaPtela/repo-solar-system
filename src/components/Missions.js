@@ -5,7 +5,9 @@ import '../App.css';
 class missoes extends React.Component {
   render() {
     return (
-      <div data-testid="missions"><Title headline="Missões" /></div>
+      <div className="titulo-missoes" data-testid="missions">
+        <Title headline="Missões" />
+      </div>
     );
   }
 }
