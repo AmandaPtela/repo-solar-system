@@ -33,10 +33,6 @@ header {
   text-align: center;
 }
 
-.titulo-missoes {
-  width: 950px;
-}
-
 h2 {
   border: none;
   margin: 0;
@@ -53,7 +49,44 @@ h2 {
   font-size: 18px;
   height: 200px;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
   width: 100%;
+}
+
+.div-missoes {
+  border-bottom: 0.1cm solid white;
+  border-left: 0.1cm solid white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  padding-top: 10px;
+  text-align: center;
+  width: 209px;
+}
+
+.missoes-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 78%;
+}
+
+.missoes {
+  background-color: rgba(37, 35, 35, 0.445);
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.item {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgb(28, 40, 97);
+  text-shadow: 2cm;
 }
