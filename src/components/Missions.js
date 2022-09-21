@@ -7,9 +7,9 @@ import '../App.css';
 class missoes extends React.Component {
   render() {
     return (
-      <div className="missoes-titulo" data-testid="missions">
+      <div className="missions" data-testid="missions">
         <Title headline="Missões" />
-        <div className="missoes">
+        <div className="div-missoes">
           {missions.map((item) => (
             <MissionCard
               key={ item.name }

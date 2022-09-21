@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import SolarSystem from './components/SolarSystem';
@@ -9,8 +10,10 @@ class App extends React.Component {
     return (
       <div data-testid="my-action" className="App">
         <Header />
-        <SolarSystem />
-        <Missions />
+        <Routes>
+          <Route path="planets" element={ <SolarSystem /> } />
+          <Route path="missions" element={ <Missions /> } />
+        </Routes>
       </div>
     );
   }
