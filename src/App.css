@@ -29,8 +29,7 @@ header {
   text-align: center;
   width: 100vw;
   justify-content: center;
-  position: relative;
-  z-index: 1;
+  padding-top: 30px;
 }
 
 .area-linha {
@@ -49,13 +48,13 @@ header {
 .linha2 {
   color: rgb(255, 255, 255);
   width: 2%;
-  animation: linha12 1s infinite;
+  animation: linha12 1.5s infinite;
 }
 
 .linha3 {
   color: rgb(255, 255, 255);
   width: 2%;
-  animation: linha3 1s reverse infinite;
+  animation: linha3 1s infinite;
 }
 
  hr {
@@ -68,44 +67,78 @@ header {
     opacity: 100%;
   }
   100% {
-    position: relative; margin-left: 1000px;
-    opacity: 5%;
+    position: relative; margin-left: 100%;
+    opacity: 0%;
   }
 }
 
 @keyframes linha3 {
   0% {
-    position: relative; margin-left: 0;
+    position: relative; margin-left: 100vw;
     opacity: 100%;
   }
   100% {
-    position: relative; margin-left: 1400px;
+    position: relative; margin-left: 0;
     opacity: 5%;
   }
 }
 
 .header-title {
-  color: red;
+  color: rgb(255, 255, 255);
+  font-family: 'Trispace', sans-serif;
   font-size: 100px;
+  font-weight: 300;
+}
+
+.big-box-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
 }
 
 .box-buttons {
   display: flex;
   justify-content: space-around;
   width: 40%;
-  margin-top: 50px;
+  padding-bottom: 10%;
 }
 
 .nav {
   background-color: transparent;
   color: rgb(87, 74, 74);
   border: 0;
-  font-size: 35px;
+  font-size: 30px;
+  font-family: 'Trispace', sans-serif;
 }
 
 .nav:hover {
   transform: scale(1.2);
+  transition: 0.2s;
   color: white;
+}
+
+.area-seta {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+}
+
+.seta {
+ color: white;
+ animation: seta 1s alternate infinite;
+}
+
+@keyframes seta {
+  from {
+    position: relative; bottom: 0;
+  }
+  to {
+    position: relative; bottom: 80px;
+  }
 }
 
 .titulo {
@@ -117,6 +150,7 @@ header {
   padding: 5px;
   text-align: center;
   width: 70%;
+  font-family: 'Trispace', sans-serif;
 }
 
 .nome-planeta {
@@ -130,6 +164,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   font-size: 19px;
+  font-family: 'Trispace', sans-serif;
   justify-content: space-around;
   height: 100vh;
   text-align: center;
@@ -154,17 +189,23 @@ header {
   border-radius: 1em;
 }
 
-.solar-system, .missions {
+.solar-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.missions {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
 }
-
 .div-missoes {
   display: flex;
   flex-flow: row wrap;
-  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  font-family: 'Trispace', sans-serif;
   justify-content: space-around;
   margin-top: 50px;
   width: 100vw;
