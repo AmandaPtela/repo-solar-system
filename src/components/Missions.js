@@ -9,6 +9,19 @@ class missoes extends React.Component {
     return (
       <div className="missions" data-testid="missions">
         <Title headline="Missões" />
+        {/* Filtrar missões por nome do planeta */}
+        <div className="filtro">
+        <select>
+            <option>Mercúrio</option>
+            <option>Vênus</option>
+            <option>Terra</option>
+            <option>Marte</option>
+            <option>Júpiter</option>
+            <option>Saturno</option>
+            <option>Urano</option>
+            <option>Netuno</option>
+          </select>
+        </div>
         <div className="div-missoes">
           {missions.map((item) => (
             <MissionCard
